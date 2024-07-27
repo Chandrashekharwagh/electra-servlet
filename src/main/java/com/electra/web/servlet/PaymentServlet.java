@@ -1,39 +1,22 @@
 package com.electra.web.servlet;
 
-import jakarta.servlet.annotation.WebServlet;
+import java.io.IOException;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 
-@WebServlet("/submit_payment")
-public class PaymentServlet {
-    private String message;
+public class PaymentServlet extends HttpServlet {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String amount = request.getParameter("amount");
+        String paymentDate = request.getParameter("payment_date");
+        String customerId = request.getParameter("customer_id");
+        String orderId = request.getParameter("order_id");
 
-    public void init() {
-        System.out.println("--------------- inside the init() method ---------------");
-        message = "Hello Users!";
+        // Process the data (e.g., save to database)
+        // ...
+
+        response.getWriter().println("Payment submitted successfully!");
     }
-
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        System.out.println("--------------- inside the doGet() method ---------------");
-        response.setContentType("text/html");
-
-        // Hello
-        PrintWriter out = response.getWriter();
-        out.println("<html><body>");
-        out.println("<h1>" + message + "</h1>");
-        out.println("</body></html>");
-    }
-
-    public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        System.out.println("--------------- inside the service() method ---------------");
-        this.doGet(request, response);
-    }
-
-    public void destroy() {
-        System.out.println("--------------- inside the destroy() method ---------------");
-    }
-
 }
