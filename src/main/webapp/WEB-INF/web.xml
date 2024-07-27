@@ -3,69 +3,80 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
          version="5.0">
+
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>
     <servlet>
-        <servlet-name>AddressServlet</servlet-name>
+        <servlet-name>indexServlet</servlet-name>
+        <servlet-class>com.electra.web.servlet.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>indexServlet</servlet-name>
+        <url-pattern>/index-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addressServlet</servlet-name>
         <servlet-class>com.electra.web.servlet.AddressServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>AddressServlet</servlet-name>
-        <url-pattern>/submit_address</url-pattern>
+        <servlet-name>addressServlet</servlet-name>
+        <url-pattern>/address-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>BrandServlet</servlet-name>
+        <servlet-name>brandServlet</servlet-name>
         <servlet-class>com.electra.web.servlet.BrandServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>BrandServlet</servlet-name>
-        <url-pattern>/submit_brand</url-pattern>
+        <servlet-name>brandServlet</servlet-name>
+        <url-pattern>/brand-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>SupplierServlet</servlet-name>
+        <servlet-name>supplierServlet</servlet-name>
         <servlet-class>com.electra.web.servlet.SupplierServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>SupplierServlet</servlet-name>
-        <url-pattern>/submit_supplier</url-pattern>
+        <servlet-name>supplierServlet</servlet-name>
+        <url-pattern>/supplier-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>ProductServlet</servlet-name>
+        <servlet-name>productServlet</servlet-name>
         <servlet-class>com.electra.web.servlet.ProductServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ProductServlet</servlet-name>
-        <url-pattern>/submit_product</url-pattern>
+        <servlet-name>productServlet</servlet-name>
+        <url-pattern>/product-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>CustomerServlet</servlet-name>
+        <servlet-name>customerServlet</servlet-name>
         <servlet-class>com.electra.web.servlet.CustomerServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>CustomerServlet</servlet-name>
-        <url-pattern>/submit_customer</url-pattern>
+        <servlet-name>customerServlet</servlet-name>
+        <url-pattern>/customer-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>OrdersServlet</servlet-name>
+        <servlet-name>ordersServlet</servlet-name>
         <servlet-class>com.electra.web.servlet.OrdersServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>OrdersServlet</servlet-name>
-        <url-pattern>/submit_order</url-pattern>
+        <servlet-name>ordersServlet</servlet-name>
+        <url-pattern>/order-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>PaymentServlet</servlet-name>
+        <servlet-name>paymentServlet</servlet-name>
         <servlet-class>com.electra.web.servlet.PaymentServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>PaymentServlet</servlet-name>
-        <url-pattern>/submit_payment</url-pattern>
+        <servlet-name>paymentServlet</servlet-name>
+        <url-pattern>/payment-servlet</url-pattern>
     </servlet-mapping>
+
 </web-app>
