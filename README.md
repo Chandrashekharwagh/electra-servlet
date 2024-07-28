@@ -1,7 +1,5 @@
 
-# JSP Servlet Project
-![Java](https://img.shields.io/badge/java-%3E%3D%201.8-blue.svg)
-![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+#  Electra - JSP Servlet Project
 
 ## Table of Contents
 
@@ -12,7 +10,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
@@ -51,8 +48,8 @@ This project is a web application built using JavaServer Pages (JSP) and Servlet
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/jsp-servlet-project.git
-   cd jsp-servlet-project
+   git clone https://github.com/Chandrashekharwagh/electra-jsp-servlet.git
+   cd electra-jsp-servlet
    ```
 
 2. **Setup the database:**
@@ -75,7 +72,7 @@ This project is a web application built using JavaServer Pages (JSP) and Servlet
 
 6. **Start Tomcat:**
 
-   Start the Tomcat server and access the application at `http://localhost:8080/jsp-servlet-project`.
+   Start the Tomcat server and access the application at `http://localhost:8080/electra`.
 
 ## Usage
 
