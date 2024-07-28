@@ -8,6 +8,12 @@ import jakarta.servlet.http.HttpServletResponse;
 
 
 public class AddressServlet extends HttpServlet {
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String street = request.getParameter("street");
         String city = request.getParameter("city");
@@ -19,5 +25,10 @@ public class AddressServlet extends HttpServlet {
         // ...
 
         response.getWriter().println("Address submitted successfully!");
+    }
+
+    @Override
+    public void destroy() {
+        super.destroy();
     }
 }

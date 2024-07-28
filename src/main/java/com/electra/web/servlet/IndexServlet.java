@@ -18,7 +18,7 @@ public class IndexServlet extends HttpServlet {
         // Handle GET request
         response.setContentType("text/html");
         response.getWriter().println("<html><body>");
-        response.getWriter().println("<h1>Welcome to the Entity Management System</h1>");
+        response.getWriter().println("<h1>Welcome to the Electra</h1>");
         response.getWriter().println("<p>Select a form to manage the respective entity:</p>");
         response.getWriter().println("<ul>");
         response.getWriter().println("<li><a href='address_form.html'>Address Form</a></li>");
@@ -38,13 +38,4 @@ public class IndexServlet extends HttpServlet {
         // Service method code
     }
 
-    @Override
-    protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Handle DELETE request
-    }
-
-    @Override
-    public void destroy() {
-        // Cleanup code
-    }
 }
