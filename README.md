@@ -15,7 +15,6 @@ JSP and Servlets are fundamental technologies for building dynamic web applicati
 ## Contents
 
 1. **Basic Servlet Examples**
-   - Hello World Servlet
    - Form Handling Servlet
    - Session Management
 
