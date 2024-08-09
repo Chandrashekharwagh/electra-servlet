@@ -1,5 +1,5 @@
 
-#  Electra - JSP Servlet Project
+#  Electra - Servlet Project
 
 ## Table of Contents
 
@@ -27,7 +27,6 @@ This project is a web application built using JavaServer Pages (JSP) and Servlet
 ## Technologies Used
 
 - **Java:** Programming language
-- **JSP:** JavaServer Pages for dynamic web content
 - **Servlets:** Java classes to handle HTTP requests and responses
 - **Apache Tomcat:** Servlet container
 - **MySQL/MariaDB:** Database for storing application data
