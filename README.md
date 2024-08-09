@@ -1,6 +1,6 @@
 Certainly. I'll expand on the intro with more details and sections. Here's a more comprehensive README for your GitHub repository:
 
-# electra-jsp-servlet
+# Electra-jsp-servlet
 
 This repository demonstrates the key concepts of JSP (JavaServer Pages) and Servlets through practical examples and implementations.
 
